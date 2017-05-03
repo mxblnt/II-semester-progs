@@ -3,7 +3,7 @@
 Collection of C code written for my university programming courses
 
 
-| Program | What It Does |
+| Code File | What It Does |
 | --- | --- |
 | **qsortlab.c** | Sorting random array in descending order |
 | **recursionlab.c** | Recursive function outputting number of possible combinations (and caching results in file) |
