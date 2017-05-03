@@ -13,7 +13,6 @@ void changeRegister(char * stringX)
 int main()
 {
   char stringA[256];
-
   printf("Your input: ");
   fgets(stringA, 256, stdin);
   changeRegister(stringA);
