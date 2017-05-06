@@ -34,6 +34,5 @@ int main()
   qsort(NewArray, ArraySize, sizeof(int), compare);
   PrintArray(NewArray, ArraySize);
 
-  free(NewArray);
   return 0;
 }
