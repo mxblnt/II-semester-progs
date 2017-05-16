@@ -1,5 +1,6 @@
 typedef struct XYZ_Vectors {
   int x,y,z;
+  char vstring[256];
 } XYZvector;
 
 XYZvector NewXYZVector(int coordX, int coordY, int coordZ);
