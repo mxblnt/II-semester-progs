@@ -8,4 +8,5 @@ Collection of C code written for my university programming courses
 | **qsortlab.c** | Sorting random array in descending order |
 | **recursionlab.c** | Recursive function outputting number of possible combinations (and caching results in file) |
 | **stringlab1.c** | Changing register in input string (lowercase to uppercase and vice versa) |
-| **XYZvector** | C library for three-dimensional vectors |
+| **xyzvector/** | C library, implementing three-dimensional vectors |
+| **graphs/dfs.c** | Using DFS on adjacency matrix to figure out the number of connected components |
