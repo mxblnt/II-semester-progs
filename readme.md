@@ -9,4 +9,4 @@ Collection of C code written for my university programming courses
 | **recursionlab.c** | Recursive function outputting number of possible combinations (and caching results in file) |
 | **stringlab1.c** | Changing register in input string (lowercase to uppercase and vice versa) |
 | **xyzvector/** | C library, implementing three-dimensional vectors |
-| **graphs/dfs.c** | Using DFS on adjacency matrix to figure out the number of connected components |
+| **graphs/dfs.c** | Using adjacency matrix to figure out the number of connected components |
