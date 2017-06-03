@@ -3,6 +3,7 @@ typedef struct XYZ_Vectors {
   char vstring[256];
 } XYZvector;
 
+XYZvector GetString(XYZvector Vector1);
 XYZvector NewXYZVector(int coordX, int coordY, int coordZ);
 XYZvector NewNullVector();
 XYZvector UnitVector(char UnitChar);

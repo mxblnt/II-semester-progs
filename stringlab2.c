@@ -12,19 +12,24 @@ int main()
 	fgets(s2, 256, stdin);
 	
 	int const ls1 = strlen(s1);
-	s1[ls1-1] = 0;
+	int const ls2 = strlen(s2);
 	
+	s1[ls1-1]='\0';
+	s2[ls2-1]='\0';
+
+	printf("%s %s\n", s1, s2);
+
 	for(int i=0; i<ls1; i++) {
-        char tmp[256]="";
+        char tmp[256];
         k=0;
         if(s1[i]==s2[0]){
 			int j=i;
-            do {
+            while(s1[j]==s2[k]) {
                 tmp[k]=s1[j];
                 j++; k++;
-            } while(s1[j]==s2[k]);
-			
-			if(strcmp(s2,tmp)!=0) cnt++;
+            }
+			tmp[k]='\0';
+			if(strcmp(s2,tmp)==0) cnt++;
         }
     }    
 
