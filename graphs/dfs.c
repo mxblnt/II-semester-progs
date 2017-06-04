@@ -21,12 +21,10 @@ void dfs(int v)
 int main()
 {
 	FILE *adjMatrix;
-	adjMatrix=fopen("./adjmatrix.txt","r");
-	int i,j,count=0,con_count=1;
-	
-    char temp[400];
-    fgets(temp, 400, adjMatrix);
-    n=sqrt(strlen(temp)-1);
+	adjMatrix=fopen("./adjmatrix","r");
+	int i,j,con_count=1;
+
+	fscanf(adjMatrix, "%i", &n);
 
 	for(i=0;i<n;i++) {
 		reach[i]=0;
@@ -38,11 +36,10 @@ int main()
 	
 	for(i=0;i<n;i++) {
 		for(j=0;j<n;j++) {
-			a[i][j]=temp[count] - '0';
+			fscanf(adjMatrix, "%i ", &a[i][j]);
 			printf("%d", a[i][j]);
-			count++;
 		}
-		printf("\n");
+	    printf("\n");
 	}
 	
 	printf("\n DFS result: \n");
